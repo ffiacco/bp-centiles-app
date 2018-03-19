@@ -5,7 +5,7 @@
     var dfd = $.Deferred();
 
     smart.patient.read().done(function(pt) {
-      var name = pt.name[0].given.join(" ") +" "+ pt.name[0].family.join(" ");
+      var name = pt.name[0].given.join(" ") + " " + pt.name[0].family;
       var birthday = new Date(pt.birthDate).toISOString();
       var gender = pt.gender;
 

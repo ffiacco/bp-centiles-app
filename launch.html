@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Blood Pressure Centiles SMART Application</title>
     <script src="node_modules/fhirclient/fhir-client.js"></script>
+    <script src="app.js"></script>
     <script>
       FHIR.oauth2.authorize({
         "client_id": "bp_centiles",
         "scope":  "patient/*.read"
       });
     </script>
+    <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
   </head>
-  Loading...
 </html>
